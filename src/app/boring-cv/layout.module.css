@@ -1,0 +1,7 @@
+.layout {
+    --about-font-size: 16px;
+
+    --background-color: white;
+    --about-text-color: gray;
+    --heading-text-color: black;
+}
