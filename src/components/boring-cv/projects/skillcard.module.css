@@ -1,0 +1,39 @@
+.container {
+    color: white;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: var(--smol-font-size);
+}
+
+.default {
+    background-color: rgb(99, 91, 91);
+}
+
+.nextjs{
+    background-color: #3f91a8; 
+}
+
+.javascript {
+    background-color: #a49533; 
+}
+
+.python {
+    background-color: #cad031; 
+}
+
+.rust {
+    background-color: #DE5842; 
+}
+
+.cCpp {
+    background-color: #659AD2; 
+}
+
+.java {
+    background-color: #B07219; 
+}
+
+.aws {
+    background-color: #FF9900; 
+}

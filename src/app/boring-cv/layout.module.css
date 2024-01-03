@@ -1,7 +1,24 @@
 .layout {
-    --about-font-size: 16px;
+    --heading-font-size: 25px;
+    --large-font-size: 18px;
+    --med-font-size: 16px;
+    --smol-font-size: 13px;
 
     --background-color: white;
-    --about-text-color: gray;
+    --main-text-color: rgb(50, 48, 48);
+    --subtitle-text-color: rgb(96,103,117);
     --heading-text-color: black;
+}
+
+.layout::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+    .layout {
+        --background-color: rgb(15, 15, 15);
+        --heading-text-color: rgb(214, 193, 193);
+        --main-text-color: rgb(134, 124, 124);
+    }
 }

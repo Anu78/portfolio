@@ -1,19 +1,28 @@
 .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     border-radius: 15px;
-    border: 1px solid rgba(130,130,130,0.2);
     padding: 1%;
 }
 
 .title {
-
+    color: var(--heading-text-color);
+    font-size: var(--large-font-size);
 }
 
 .desc {
-
+    font-size: var(--smol-font-size);
+    color: var(--subtitle-text-color);
 }
 
 .skillsBox {
     display: flex;
     flex-direction: row;
     gap: 1vw;
+}
+
+.skillsBox p {
+    font-size: var(--smol-font-size);
+    color: var(--main-text-color);
 }

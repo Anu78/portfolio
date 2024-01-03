@@ -1,8 +1,8 @@
 export const resume = {
     personalinfo: {
-        name: "",
-        shortabout: "",
-        longabout: ""
+        name: "anuraag",
+        shortabout: "it's unknown what i'm about to do, but what i know for sure is that",
+        longabout: "long about section with lots of information and helpful things"
     },
     location: {
         city: "charlotte",
@@ -24,12 +24,13 @@ export const resume = {
         date: "2021-2024", // start to end "2021-2024"
     },
     skills: [
-        "next.js",
+        "next.js/react",
         "javascript",
         "python",
-        "learning rust",
-        "C/C++",
-        "Java (i do not enjoy)"
+        "rust",
+        "c/c++",
+        "java",
+        "aws"
     ],
     projects: [
         {

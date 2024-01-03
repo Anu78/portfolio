@@ -1,20 +1,108 @@
+/* section styling */
 .container {
-    display: flex;
-    width: 100vw;
-    flex-grow: 1;
-    background-color: var(--background-color);
-    flex-direction: column;
-    align-items: center;
-    padding-top: 5%;
-    gap: 4vh;
+  display: flex;
+  width: 100vw;
+  flex-grow: 1;
+  background-color: var(--background-color);
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.1rem;
+  gap: 3vh;
 }
 
 .container section {
-    width: 85%;
+  width: 50vw;
+}
+
+@media screen and (max-width: 750px) {
+    .container section {
+        width: 100%;
+        padding: 1.1rem;
+    }
 }
 
 .baseSection {
-display: flex;
-text-align: left;
-flex-direction: column;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  gap: 2vh;
+}
+/* about section styling */
+.about {
+    display: flex;
+    flex-direction: row;
+}
+.aboutimg {
+    margin-left: auto;
+}
+
+.aboutimg img {
+    border-radius: 15px;
+}
+
+.aboutinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.gradientfill {
+    background: linear-gradient(to right, aqua 0%, purple 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: var(--heading-font-size);
+}
+
+/* education styling */
+.university {
+    display: flex;
+}
+
+.unidate {
+    margin-left: auto;
+}
+
+/* skills styling */
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+
+/* proejcts styling */
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* text styling */
+.headingtext {
+    color: var(--heading-text-color);
+    font-size: var(--heading-font-size);
+}
+
+.largetext {
+    color: var(--heading-text-color);
+    font-size: var(--large-font-size);
+}
+
+.medtext {
+    font-size: var(--med-font-size);
+    color: var(--main-text-color);
+}
+
+.smalltext {
+    font-size: var(--smol-font-size);
+    color: var(--subtitle-text-color);
+}
+
+/* misc padding for overscroll */
+.padded {
+    width: 100vw;
+    height: 100px;
 }
