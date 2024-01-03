@@ -11,7 +11,7 @@
 }
 
 .container section {
-  width: 50vw;
+  width: 60vw;
 }
 
 @media screen and (max-width: 750px) {
@@ -46,8 +46,13 @@
     gap: 1vh;
 }
 
+.abouticons {
+    display: flex;
+    gap: 0.75rem;
+}
+
 .gradientfill {
-    background: linear-gradient(to right, aqua 0%, purple 50%);
+    background: linear-gradient(to right, #fc00ff 0%, #00dbde 25%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

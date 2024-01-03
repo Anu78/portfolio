@@ -2,13 +2,17 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    border-radius: 15px;
-    padding: 1%;
+    padding: 0.75rem;
 }
 
 .title {
     color: var(--heading-text-color);
     font-size: var(--large-font-size);
+    font-weight: bold;
+}
+
+.title:hover {
+    text-decoration: underline !important;
 }
 
 .desc {
@@ -25,4 +29,15 @@
 .skillsBox p {
     font-size: var(--smol-font-size);
     color: var(--main-text-color);
+}
+
+.active {
+    background: linear-gradient(to right, #3CA55C 0%, #B5AC49 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.active:hover {
+    text-decoration: underline;
 }

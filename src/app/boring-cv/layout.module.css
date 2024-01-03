@@ -8,6 +8,8 @@
     --main-text-color: rgb(50, 48, 48);
     --subtitle-text-color: rgb(96,103,117);
     --heading-text-color: black;
+
+    --about-icon-color: black;
 }
 
 .layout::-webkit-scrollbar {
@@ -20,5 +22,6 @@
         --background-color: rgb(15, 15, 15);
         --heading-text-color: rgb(214, 193, 193);
         --main-text-color: rgb(134, 124, 124);
+        --about-icon-color: rgb(226, 204, 204);
     }
 }

@@ -11,7 +11,7 @@ export const resume = {
     },
     contact: { // just the usernames; full email is required
         linkedin: "anuraagw", 
-        twitter: "boopdogpng",
+        twitter: "boopdotpng",
         email: "anuraag.warudkar@gmail.com",
         github: "Anu78",
     },
@@ -34,14 +34,14 @@ export const resume = {
     ],
     projects: [
         {
-            title: "sudoku solver",
+            title: "web sudoku",
             link: "https://anuraagw.me/sudoku",
             active: true,
             desc: "a react sudoku solver.",
             highlights: ["react", "javascript", "css"]
         },
         {
-            title: "canvas discord bot",
+            title: "canvas-lms discord bot",
             link: "https://github.com/Anu78",
             active: false,
             desc: "a bot to encourage collaboration at school.",
@@ -52,7 +52,7 @@ export const resume = {
             link: "https://github.com/Anu78",
             active: true,
             desc: "a resnet inspired model that plays geoguessr well half the time",
-            highlights: ["python", "google api", "pytorch"]
+            highlights: ["python", "google street view api", "pytorch"]
         },
         {
             title: "mom's inventory management",

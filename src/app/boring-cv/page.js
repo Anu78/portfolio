@@ -3,6 +3,7 @@ import { resume } from "@/data/resume-data";
 import ProjectCard from "@/components/boring-cv/projects/ProjectCard";
 import SkillCard from "@/components/boring-cv/projects/SkillCard";
 import Image from "next/image";
+import IconPack from "@/components/boring-cv/icons/IconPack";
 const BoringCv = () => {
   return (
     <div className={styles.container}>
@@ -16,11 +17,15 @@ const BoringCv = () => {
             <p className={styles.smalltext}>
               {resume.location.city}, {resume.location.country}, {resume.location.timezone}
             </p>
-          <div>impl needed - icons live here</div>
+          <div>
+            <div className={styles.abouticons}>
+            <IconPack icons={resume.contact}/>
+            </div>
+          </div>
           </div>
       
           <div className={styles.aboutimg}>
-          <Image src="/selfie.jpg" width={128} height={128}/>
+          <Image src="/selfie.jpg" width={128} height={128} alt="a selfie"/>
           </div>
         </div>
       </section>
