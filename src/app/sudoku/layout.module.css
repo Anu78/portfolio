@@ -1,0 +1,16 @@
+.layout {
+    --sudoku-board-size: 65vh;
+    --grid-item-dim: calc(var(--sudoku-board-size) / 9);
+    --sudoku-thick-border: 4px;
+    --flex-edges: 30%;
+    --flex-mid: 40%;
+    --background: #e6ddd6;
+    --text: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+    .layout {
+      --background: #1d1b1a;
+      --text: #ffffff;
+    }
+  }

@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.leftThird {
+  flex-basis: var(--flex-edges);
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  flex-direction: column;
+}
+
+.midThird {
+  flex: var(--flex-mid);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rightThird {
+  flex: var(--flex-edges);
+}
+
+.thirds {
+  float: left;
+  box-sizing: border-box;
+}
