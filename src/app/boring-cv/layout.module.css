@@ -1,27 +1,27 @@
 .layout {
-    --heading-font-size: 25px;
-    --large-font-size: 18px;
-    --med-font-size: 16px;
-    --smol-font-size: 13px;
+  --heading-font-size: 25px;
+  --large-font-size: 18px;
+  --med-font-size: 16px;
+  --smol-font-size: 13px;
 
-    --background-color: white;
-    --main-text-color: rgb(50, 48, 48);
-    --subtitle-text-color: rgb(96,103,117);
-    --heading-text-color: black;
+  --background-color: white;
+  --main-text-color: rgb(50, 48, 48);
+  --subtitle-text-color: rgb(96, 103, 117);
+  --heading-text-color: black;
 
-    --about-icon-color: black;
+  --about-icon-color: black;
 }
 
 .layout::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
+  width: 0px;
+  background: transparent;
 }
 
 @media (prefers-color-scheme: dark) {
-    .layout {
-        --background-color: rgb(15, 15, 15);
-        --heading-text-color: rgb(214, 193, 193);
-        --main-text-color: rgb(134, 124, 124);
-        --about-icon-color: rgb(226, 204, 204);
-    }
+  .layout {
+      --background-color: rgb(15, 15, 15);
+      --heading-text-color: rgb(214, 193, 193);
+      --main-text-color: rgb(134, 124, 124);
+      --about-icon-color: rgb(226, 204, 204);
+  }
 }

@@ -1,9 +1,54 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   min-height: 100vh;
   color: aliceblue;
+  gap: 4rem;
+  background: linear-gradient(45deg, #0F2027, #203A43, #2C5364);
 }
 
+.linkgroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.link {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid lightblue;
+  font-size: 17px;
+}
+
+.mainbold {
+  font-size: 50px;
+  font-weight: bold;
+  background: linear-gradient(to right, #f12711, #f5af19);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.littletext {
+  font-size: 17px;
+  max-width: 40vw;
+  line-height: 175%;
+}
+
+@media screen and (max-width: 400px) {
+  .littletext {
+    max-width: 100vw;
+    line-height: 150%;
+  }
+}
+
+.subtitle {
+  color: gray;
+  font-size: 12px;
+}
+
+.comingsoon {
+  text-decoration: line-through;
+}
