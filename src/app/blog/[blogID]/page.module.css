@@ -1,0 +1,33 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+    justify-content: center;
+}
+
+
+
+.inner {
+    width: 50vw;
+}
+
+@media screen and (max-width: 550px) {
+    .inner {
+        width: 90vw;
+    }
+}
+
+.explain {
+    line-height: 150%;
+    font-size: large;
+}
+
+.wip {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}

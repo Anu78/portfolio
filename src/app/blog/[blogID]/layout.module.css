@@ -1,0 +1,15 @@
+.layout {
+    --background-color: rgb(214, 153, 197);
+    --text-color: rgb(155, 138, 138);     
+}
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    .layout {
+        --background-color: rgb(53, 47, 47);
+        --text-color: aliceblue;
+    }
+}
