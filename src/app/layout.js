@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { FaHome } from "react-icons/fa";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +13,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children}
+      
+      <Link href="/" className="back-to-home"><FaHome color="white" size={35}/></Link>
+      </body>
     </html>
   );
 }

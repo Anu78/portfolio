@@ -29,3 +29,10 @@ a {
 ::-webkit-scrollbar {
   width: 0px;
 }
+
+.back-to-home {
+  position: fixed;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  z-index: 1000;
+}

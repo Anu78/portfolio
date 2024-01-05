@@ -1,12 +1,36 @@
 .main {
+  --outer-width: 60vw;
+  --gradient-left: #c83c92;
+  --gradient-right: #94cd3a;
+  display: flex;
+  place-content: center;
+  background: linear-gradient(-45deg, #000046, #1CB5E0);
+}
+
+@media (prefers-color-scheme: dark) {
+  .main {
+    background: linear-gradient(-45deg, #0f0c29,#302b63, #24243e);
+
+    --gradient-left: #3f8c46;
+    --gradient-right: #924841;
+  }
+}
+
+.innermain {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  color: aliceblue;
+  color: rgb(204, 196, 203);
   gap: 4rem;
-  background: linear-gradient(45deg, #0F2027, #203A43, #2C5364);
+  max-width: var(--outer-width);
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    --outer-width: 90vw;
+  }
 }
 
 .linkgroup {
@@ -25,23 +49,17 @@
 .mainbold {
   font-size: 50px;
   font-weight: bold;
-  background: linear-gradient(to right, #f12711, #f5af19);
+  background: linear-gradient(to right, var(--gradient-left), var(--gradient-right));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+  
+  transition: all 0.5s ease;
 }
 
 .littletext {
   font-size: 17px;
-  max-width: 40vw;
   line-height: 175%;
-}
-
-@media screen and (max-width: 400px) {
-  .littletext {
-    max-width: 100vw;
-    line-height: 150%;
-  }
 }
 
 .subtitle {
