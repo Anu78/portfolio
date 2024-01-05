@@ -1,0 +1,22 @@
+.layout {
+    --main-heading-font: 40px;
+    --blog-summary-font: 14px;
+    --blog-title-font: 20px;
+    --main-text-font: 16px;
+
+    --background-color: rgb(233, 231, 224);
+    --blog-card-color: #dbd1d1;
+    --title-color: rgb(80, 80, 66);
+    --main-color: rgb(145, 129, 110);
+    --todo-icon-color: #7d8064;
+}
+
+@media (prefers-color-scheme: dark) {
+    .layout {
+        --background-color: rgb(45, 41, 37);
+        --blog-card-color: #3f5759;
+        --title-color: rgb(223, 163, 163);
+        --main-color: rgb(194, 165, 165);
+        --todo-icon-color: white;
+    }
+}

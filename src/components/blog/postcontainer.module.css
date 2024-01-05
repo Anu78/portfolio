@@ -1,0 +1,46 @@
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+}
+.container {
+    background-color: var(--blog-card-color); /* Light grey background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center; /* Aligns title and pin icon */
+    color: var(--title-color);
+}
+
+.pinned {
+    margin-left: 10px;
+    color: var(--todo-icon-color); /* A pop of color for the pin icon */
+    vertical-align: bottom;
+}
+
+.summary {
+    font-size: 0.9em;
+    color: var(--main-color);
+    line-height: 1.6;
+}
+
+.date {
+    font-style: italic;
+    color: var(--main-color);
+    margin-top: 15px;
+    font-weight: 500;
+}

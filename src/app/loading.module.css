@@ -1,0 +1,31 @@
+.loadingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    width: 100%; /* Full screen width */
+    background-color: rgba(0,0,0); /* Semi-transparent background */
+  }
+  
+  .progressBar {
+    width: 20%;
+    height: 10px;
+    background-color: #ddd; /* Light grey background */
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the inner bar stays within the border radius */
+  }
+  
+  .progressBar::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 0;
+    background-color: #414f5e; /* Blue color for the progress */
+    animation: loadingAnimation 5s ease-in-out infinite; /* Animation */
+  }
+  
+  @keyframes loadingAnimation {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }
+  
